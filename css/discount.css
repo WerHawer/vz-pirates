@@ -85,14 +85,14 @@
   font-weight: 500;
   color: var(--color-black);
 
-  width: 70%;
+  width: 65%;
   background: var(--color-gold);
 
   text-transform: uppercase;
 }
 
 .discount_sum_flyer__container {
-  width: 30%;
+  width: 35%;
   font-family: var(--secondary-font-family);
 
   padding: 0 7px;
