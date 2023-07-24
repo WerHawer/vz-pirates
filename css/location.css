@@ -1,0 +1,60 @@
+.location {
+  margin-bottom: 32px;
+}
+
+.location__title {
+  margin-bottom: 12px;
+}
+
+.location_map__container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+}
+
+.location_wind-rose {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+
+  width: 32px;
+  height: 32px;
+
+  background: url("../assets/icons/windRose.svg") no-repeat center;
+}
+
+.location_pin {
+  position: absolute;
+  top: 115px;
+  left: 136px;
+
+  width: 39px;
+  height: 39px;
+
+  background: url("../assets/icons/pin.svg") no-repeat center;
+}
+
+.location_map__footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  padding: 14px 20px;
+
+  background: var(--color-gold-light-50);
+  backdrop-filter: blur(2.5px);
+}
+
+.map_footer__text {
+  color: var(--color-black);
+  font-size: 1.3rem;
+  line-height: 150%;
+
+  margin-bottom: 8px;
+}

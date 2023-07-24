@@ -1,0 +1,49 @@
+<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="calendar (1) 2">
+<g id="g996">
+<g id="g998">
+<g id="Clip path group">
+<mask id="mask0_350_997" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="15" height="16">
+<g id="clipPath1004">
+<path id="path1002" d="M0.5 0.338127H14.5V15.1159H0.5V0.338127Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_350_997)">
+<g id="g1000">
+<g id="g1006">
+<path id="path1008" d="M14.0898 3.51304V5.6489H0.910156V3.51304C0.910156 3.03479 1.27738 2.64716 1.73047 2.64716H13.2695C13.7226 2.64716 14.0898 3.03479 14.0898 3.51304Z" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1010">
+<path id="path1012" d="M4.68054 3.80167V1.49264" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1018">
+<path id="path1020" d="M10.3195 3.80167V1.49264" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1022">
+<path id="path1024" d="M3.5625 8.7357H4.4375" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1030">
+<path id="path1032" d="M3.5625 11.1697H4.4375" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1034">
+<path id="path1036" d="M7.0625 8.7357H7.9375" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1042">
+<path id="path1044" d="M7.0625 11.1697H7.9375" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1046">
+<path id="path1048" d="M10.5625 8.7357H11.4375" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1054">
+<path id="path1056" d="M10.5625 11.1697H11.4375" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="g1058">
+<path id="path1060" d="M13.2695 13.9614H1.73047C1.27744 13.9614 0.910156 13.5737 0.910156 13.0955V3.51304C0.910156 3.03484 1.27744 2.64716 1.73047 2.64716H13.2695C13.7226 2.64716 14.0898 3.03484 14.0898 3.51304V13.0955C14.0898 13.5737 13.7226 13.9614 13.2695 13.9614Z" stroke="#FFCD1C" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

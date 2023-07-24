@@ -1,0 +1,54 @@
+:root {
+  --primary-bg-color: #000;
+
+  /*TEXT*/
+  --color-white: #fff;
+  --color-white-80: rgba(255, 255, 255, 0.8);
+  --color-white-70: rgba(255, 255, 255, 0.7);
+  --color-white-40: rgba(255, 255, 255, 0.4);
+  --color-white-25: rgba(255, 255, 255, 0.25);
+  --color-white-20: rgba(255, 255, 255, 0.2);
+  --color-white-15: rgba(255, 255, 255, 0.15);
+  --color-white-10: rgba(255, 255, 255, 0.1);
+  --color-gray-light: #bbb;
+  --color-gray5: #e0e0e0;
+  --color-gray6: #f2f2f2;
+  --color-gray6-80: rgba(242, 242, 242, 0.8);
+  --color-gray6-70: rgba(242, 242, 242, 0.7);
+  --color-gray6-40: rgba(242, 242, 242, 0.4);
+  --color-gray: #2f2c2c;
+  --color-gray-70: rgba(47, 44, 44, 0.7);
+  --color-gray-dark: #818181;
+  --color-black: #000;
+  --color-black-80: rgba(0, 0, 0, 0.8);
+  --color-black2: #202020;
+  --color-maire: #120f08;
+  --color-dark: #141109;
+  --color-dark-55: rgba(20, 17, 9, 0.55);
+  --color-brown: #332b16;
+  --color-brown-40: rgba(51, 43, 22, 0.4);
+  --color-light-brown: #4b4022;
+  --color-light-brown-30: rgba(75, 64, 34, 0.3);
+  --color-gold: #ffcd1c;
+  --color-gold-medium: #ffd34f;
+  --color-gold-light: #ffd66c;
+  --color-gold-light-50: rgba(255, 214, 108, 0.5);
+  --color-gold-light-40: rgba(255, 214, 108, 0.4);
+  --color-gold-light-20: rgba(255, 214, 108, 0.2);
+  --color-yellow: #ffe041;
+  --color-green: #00aa6c;
+  --color-forest-green: #339761;
+  --color-reptile-green: #45b555;
+  --color-reptile-green-40: rgba(69, 181, 85, 0.4);
+  --color-light-green: #1bd741;
+  --color-aqua: #33e0a1;
+  --color-red: #ea5a47;
+  --color-light-blue: #1589d6;
+
+  --base-font-size: 10px;
+  --double-font-size: 20px;
+
+  --primary-font-family: "Poppins", sans-serif;
+  --secondary-font-family: "Gotham Pro", sans-serif;
+  --tertiary-font-family: "Whyte Inktrap", sans-serif;
+}

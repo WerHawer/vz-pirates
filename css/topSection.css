@@ -1,0 +1,65 @@
+.top_section {
+  width: 100vw;
+
+  padding: 60% 22px 0;
+  margin-bottom: 10px;
+
+  position: relative;
+
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.9) 100%
+    ),
+    url("../assets/images/room_mob.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.top_tripadvisor {
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+
+.top_title {
+  margin-bottom: 9px;
+}
+
+.top_difficulty {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  color: var(--color-gold-light);
+
+  padding: 5px 0;
+  margin-bottom: 15px;
+}
+
+.top_difficulty__text {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.top_btn {
+  margin-bottom: 15px;
+}
+
+.top_rules {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.top_rules_rule {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--color-gold-light);
+}

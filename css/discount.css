@@ -1,0 +1,123 @@
+.discount_line {
+  padding: 3px 30px;
+  font-family: var(--secondary-font-family);
+  font-size: 2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  display: flex;
+  gap: 210px;
+
+  position: absolute;
+}
+
+.discount_line--yellow {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+}
+
+.discount_line--blue {
+  background-color: var(--color-light-blue);
+  color: var(--color-white);
+}
+
+.discount_line__text-container {
+  width: max-content;
+  display: flex;
+  gap: 5px;
+}
+
+.discount_line__text {
+  width: max-content;
+}
+
+.discount_sum__container {
+  font-size: 2rem;
+  position: relative;
+}
+
+.discount_sum__container:after,
+.flyer_sum:after {
+  content: "%";
+  font-size: 0.5em;
+
+  position: absolute;
+  top: 15%;
+  right: 0;
+
+  transform: translateX(110%);
+}
+
+.discount_sum__container:before,
+.flyer_sum:before {
+  content: "off";
+  font-size: 0.25em;
+
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+
+  transform: translateX(100%);
+}
+
+.discount_flyer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+
+  margin-bottom: 77px;
+}
+
+.flyer_section {
+  display: flex;
+}
+
+.discount_flyer__title {
+  padding: 0 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: var(--secondary-font-family);
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--color-black);
+
+  width: 70%;
+  background: var(--color-gold);
+
+  text-transform: uppercase;
+}
+
+.discount_sum_flyer__container {
+  width: 30%;
+  font-family: var(--secondary-font-family);
+
+  padding: 0 7px;
+  background: var(--color-black);
+
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.flyer_sum {
+  position: relative;
+
+  font-size: 5.28rem;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--color-gold);
+
+  width: min-content;
+}
+
+.discount_text {
+  font-size: 1.14rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: var(--color-gold-light);
+  font-weight: 500;
+}

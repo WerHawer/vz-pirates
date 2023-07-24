@@ -1,0 +1,61 @@
+.tripadvisor_container {
+  width: 102px;
+  height: 107px;
+
+  background: url("../assets/icons/flag.svg") no-repeat center;
+}
+
+.tripadvisor_container::before {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 37px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 36px;
+  height: 36px;
+
+  background: url("../assets/icons/tripadvisor.svg") no-repeat center;
+}
+
+.tripadvisor_container::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 76px;
+  height: 76px;
+
+  background: url("../assets/icons/ellipse.svg") no-repeat center;
+}
+
+.tripadvisor_top_text {
+  display: block;
+
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.75rem;
+  line-height: 1.6;
+  text-transform: uppercase;
+  color: var(--color-gray6);
+}
+
+.tripadvisor_top_text--recommends {
+  top: 27px;
+  text-transform: capitalize;
+}
+
+.tripadvisor_top_text--tripadvisor {
+  top: 70px;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+}

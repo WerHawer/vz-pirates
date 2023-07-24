@@ -1,0 +1,54 @@
+.teams_battle {
+  background: url("../assets/images/skullsMob.png") no-repeat center top;
+
+  margin-bottom: 32px;
+}
+
+.teams_battle__title {
+  text-align: center;
+  margin-bottom: 302px;
+}
+
+.teams_battle__rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+
+  margin-bottom: 33px;
+}
+
+.left_rules__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+}
+
+.left_rules__item {
+  background: var(--color-gold);
+
+  color: var(--color-black);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.right_rules__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+}
+
+.right_rules__item {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: var(--color-gray6);
+  border: 1px solid var(--color-gold-light-40);
+}
+
+.teams_battle_button-container {
+  padding: 0 20px;
+}
