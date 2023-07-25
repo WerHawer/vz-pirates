@@ -7,11 +7,11 @@
 
   transition: height 200ms ease-in-out;
 
-  margin-bottom: 12px;
   position: relative;
 
   overflow: hidden;
 
+  margin-bottom: 12px;
   padding-bottom: 20px;
 }
 
@@ -86,16 +86,39 @@
   background: var(--color-gold-light-20);
 }
 
-.booking_discount__line--students {
-  left: -50%;
-  bottom: 76px;
+@media screen and (min-width: 768px) {
+  .description {
+    display: flex;
+    justify-content: space-around;
 
-  transform: rotate(7deg);
-}
+    margin-bottom: 60px;
+  }
 
-.booking_discount__line--birthday {
-  left: -35%;
-  bottom: 100px;
+  .collapsible_wrapper {
+    max-width: 50%;
+  }
 
-  transform: rotate(-10deg);
+  .collapsible_container {
+    margin-bottom: 31px;
+    height: 94px;
+  }
+
+  .collapsible_content {
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+
+  .left_diagram__list,
+  .right_diagram__list {
+    gap: 4px;
+  }
+
+  .list_item {
+    font-size: 1.6rem;
+    padding: 4px 12px;
+  }
+
+  .collapsible_btn {
+    margin-bottom: 0;
+  }
 }

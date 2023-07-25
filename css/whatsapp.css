@@ -16,3 +16,13 @@
   line-height: 120%;
   width: 50%;
 }
+
+@media (min-width: 768px) {
+  .whatsApp_container {
+    padding: 17px 14px;
+  }
+
+  .whatsApp_text {
+    font-size: 1.7rem;
+  }
+}

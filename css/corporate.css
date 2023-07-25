@@ -128,3 +128,33 @@
   font-weight: 500;
   line-height: 140%;
 }
+
+@media screen and (min-width: 768px) {
+  .corporate {
+    margin-bottom: 80px;
+  }
+
+  .corporate_title__container {
+    gap: 44px;
+
+    margin-bottom: 30px;
+  }
+
+  .corporate_discount__container {
+    font-size: 2.8rem;
+    width: 100px;
+    height: 78px;
+
+    background: url("../assets/icons/blot.svg") no-repeat center;
+    background-size: cover;
+  }
+
+  .corporate_text {
+    font-size: 1.8rem;
+    line-height: 150%;
+
+    padding: 0 50px;
+
+    margin-bottom: 30px;
+  }
+}

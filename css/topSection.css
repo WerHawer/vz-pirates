@@ -63,3 +63,44 @@
   gap: 8px;
   color: var(--color-gold-light);
 }
+
+@media screen and (min-width: 768px) {
+  .top_section {
+    padding: 10% 5.6% 5%;
+    background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      ),
+      url("../assets/images/room.jpg") no-repeat center;
+    background-size: cover;
+
+    margin-bottom: 25px;
+  }
+
+  .top_difficulty {
+    gap: 16px;
+    margin-bottom: 70px;
+  }
+
+  .top_difficulty_img {
+    width: 100px;
+    height: 30px;
+  }
+
+  .top_difficulty__text {
+    font-size: 2rem;
+  }
+
+  .top_btn {
+    margin-bottom: 24px;
+  }
+
+  .top_rules {
+    max-width: 344px;
+  }
+
+  .top_tripadvisor {
+    right: 5.6%;
+  }
+}

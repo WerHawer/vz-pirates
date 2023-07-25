@@ -26,6 +26,7 @@
 }
 
 .left_rules__item {
+  padding: 2px 8px;
   background: var(--color-gold);
 
   color: var(--color-black);
@@ -43,6 +44,7 @@
 }
 
 .right_rules__item {
+  padding: 3px 8px;
   font-size: 1.2rem;
   line-height: 1.6;
   color: var(--color-gray6);
@@ -51,4 +53,36 @@
 
 .teams_battle_button-container {
   padding: 0 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .teams_battle {
+    background: url("../assets/images/bgImageSkeletons.png") no-repeat center
+      30%;
+
+    margin-bottom: 83px;
+  }
+
+  .teams_battle__title {
+    margin-bottom: 455px;
+  }
+
+  .left_rules__list,
+  .right_rules__list {
+    gap: 4px;
+  }
+
+  .left_rules__item {
+    padding: 2px 16px;
+  }
+
+  .right_rules__item {
+    padding: 3px 16px;
+  }
+
+  .teams_battle_button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

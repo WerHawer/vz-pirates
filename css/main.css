@@ -35,6 +35,7 @@ body {
 .main {
   width: 100%;
   max-width: 1440px;
+  margin: 0 auto;
 }
 
 .header {
@@ -60,4 +61,15 @@ body {
 
 .hide {
   display: none;
+}
+
+.section {
+  width: 100%;
+  max-width: 1440px;
+}
+
+@media (min-width: 768px) {
+  .standart_wrapper {
+    padding: 0 72px;
+  }
 }

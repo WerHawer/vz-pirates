@@ -26,3 +26,19 @@
 
   object-fit: cover;
 }
+
+@media screen and (min-width: 768px) {
+  .gallery {
+    margin-bottom: 80px;
+  }
+
+  .gallery__title {
+    margin-left: 72px;
+    margin-bottom: 32px;
+  }
+
+  .gallery_photos {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+  }
+}

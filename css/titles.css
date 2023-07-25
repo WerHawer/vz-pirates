@@ -25,3 +25,17 @@
 .title--white {
   color: var(--color-white);
 }
+
+@media screen and (min-width: 768px) {
+  .title_h1 {
+    font-size: 7.2rem;
+  }
+
+  .title_h2 {
+    font-size: 5.6rem;
+  }
+
+  .title_h3 {
+    font-size: 5.6rem;
+  }
+}

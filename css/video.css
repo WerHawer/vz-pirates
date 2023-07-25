@@ -81,3 +81,27 @@
   opacity: 0;
   pointer-events: none;
 }
+
+@media (min-width: 768px) {
+  .video_section {
+    margin-bottom: 40px;
+  }
+
+  .video_button__sound {
+    width: 72px;
+    height: 72px;
+  }
+
+  .video_button__sound--off,
+  .video_button__sound--on {
+    background-size: 50%;
+  }
+
+  .video_button__sound--on:after,
+  .video_button__sound--off:after {
+    font-size: 1.4rem;
+
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

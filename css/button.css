@@ -74,6 +74,11 @@ button {
   text-transform: lowercase;
 }
 
+.button_tertiary--text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 .button_arrow {
   width: 15px;
   height: 15px;
@@ -123,6 +128,10 @@ button {
   position: relative;
 }
 
+.button_calendar--desktop {
+  display: none;
+}
+
 .button_calendar:after {
   content: "";
   width: 14px;
@@ -141,4 +150,30 @@ button {
 
 .button_calendar:active:after {
   background: url("../assets/icons/calendar_light.svg") no-repeat center;
+}
+
+@media (min-width: 768px) {
+  .button_primary,
+  .button_outline,
+  .button_tertiary,
+  .button_calendar {
+    max-width: 344px;
+  }
+
+  .button_tertiary {
+    padding: 6px 18px;
+  }
+
+  .button_tertiary--text {
+    font-size: 1.4rem;
+  }
+
+  .button_arrow {
+    width: 20px;
+    height: 20px;
+  }
+
+  .button_calendar--desktop {
+    display: block;
+  }
 }

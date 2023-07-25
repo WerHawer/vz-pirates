@@ -7,10 +7,18 @@
   margin-bottom: 24px;
 }
 
+.time_booking__tips {
+  display: none;
+
+  color: var(--color-gray6);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 .days_container {
   display: flex;
   align-items: center;
-  justify-content: center;
 
   margin-bottom: 20px;
 
@@ -18,10 +26,13 @@
 }
 
 .day_container {
+  flex-shrink: 0;
+}
+
+.day_container__header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-shrink: 0;
   padding: 12px 10px;
 
   width: 110px;
@@ -31,11 +42,11 @@
   color: var(--color-black);
 }
 
-.day_container--active {
+.day_container--active > .day_container__header {
   background: var(--color-gold-light);
 }
 
-.day_container--disabled {
+.day_container--disabled > .day_container__header {
   color: var(--color-white-40);
 }
 
@@ -44,7 +55,7 @@
   opacity: 0.3;
 }
 
-.day_container--future {
+.day_container--future > .day_container__header {
   color: var(--color-gray6);
 }
 
@@ -85,6 +96,10 @@
 
   border: 1px solid var(--color-light-brown);
   background: var(--color-light-brown-30);
+}
+
+.times_container--desktop {
+  display: none;
 }
 
 .time_price {
@@ -206,7 +221,7 @@
   padding: 12px 14px;
   width: 100%;
   max-width: 400px;
-  outline: var(--color-white-80);
+  outline: 1px solid var(--color-white-80);
 
   border: 1px solid var(--color-white-20);
   background: var(--color-black);
@@ -247,4 +262,110 @@
   font-weight: 300;
   line-height: 160%;
   text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .time_booking__title {
+    text-align: left;
+    font-size: 3.4rem;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+
+  .time_booking__header {
+    padding: 0 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+  }
+
+  .calendar_button__container--mob,
+  .times_container--mobile,
+  .day_container--mob {
+    display: none;
+  }
+
+  .time_booking__tips {
+    display: block;
+  }
+
+  .day_date__text {
+    font-size: 1.8rem;
+  }
+
+  .day_name__text {
+    font-size: 1.6rem;
+  }
+
+  .days_container {
+    gap: 24px;
+    margin-left: 18px;
+    margin-bottom: 20px;
+  }
+
+  .day_container {
+    flex-shrink: 0;
+  }
+
+  .day_container__header {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--color-light-brown);
+    background: var(--color-light-brown-30);
+  }
+
+  .times_container--desktop {
+    display: flex;
+    background: var(--color-black);
+  }
+
+  .times_container {
+    padding: 16px 14px;
+    margin-bottom: 0;
+  }
+
+  .day_container--disabled > .times_container--desktop {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .time_booking__input {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+
+    outline: 1px solid var(--color-white-20);
+    border: 1px solid var(--color-white-20);
+
+    max-width: 362px;
+  }
+
+  .time_booking__input::placeholder {
+    font-size: 1.6rem;
+
+    color: var(--color-white-70);
+  }
+
+  .time_booking__button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .time_booking__title {
+    line-height: 1;
+    font-size: 5.6rem;
+  }
+
+  .time_booking__header {
+    padding: 0 72px;
+  }
+
+  .days_container {
+    margin-left: 72px;
+  }
 }

@@ -9,7 +9,7 @@
   <body>
     <!--    <header class="header">HEADER</header>-->
     <main class="main">
-      <section class="top_section">
+      <section class="section top_section">
         <div class="top_tripadvisor tripadvisor_container">
           <span class="tripadvisor_top_text">top</span>
           <span class="tripadvisor_top_text tripadvisor_top_text--recommends"
@@ -23,7 +23,11 @@
         <h1 class="title_h1 title--gold top_title">Danube Pirates</h1>
 
         <div class="top_difficulty">
-          <img src="./assets/icons/difficulty.svg" alt="difficult" />
+          <img
+            src="./assets/icons/difficulty.svg"
+            alt="difficult"
+            class="top_difficulty_img"
+          />
           <span class="top_difficulty__text">сложность: 7</span>
         </div>
 
@@ -51,41 +55,43 @@
         </div>
       </section>
 
-      <section class="description">
-        <div class="collapsible_container js-collapsible_container">
-          <div
-            class="collapsible_container_gradient js-collapsible_container--gradient"
-          ></div>
-          <article class="collapsible_content js-collapsible_content">
-            Du musst mutig und vorsichtig sein, denn du musst aus der Kanone
-            schießen, das Lenkrad steuern und gegen deine Gegner kämpfen! Du
-            musst mutig und vorsichtig sein, denn du musst aus der Kanone
-            schießen, das Lenkrad steuern und gegen deine Gegner kämpfen!
-          </article>
-        </div>
-        <button class="button_tertiary collapsible_btn js-collapsible_btn">
-          <span class="button_tertiary--text button_text">read more</span>
+      <section class="section description">
+        <div class="collapsible_wrapper">
+          <div class="collapsible_container js-collapsible_container">
+            <div
+              class="collapsible_container_gradient js-collapsible_container--gradient"
+            ></div>
+            <article class="collapsible_content js-collapsible_content">
+              Du musst mutig und vorsichtig sein, denn du musst aus der Kanone
+              schießen, das Lenkrad steuern und gegen deine Gegner kämpfen! Du
+              musst mutig und vorsichtig sein, denn du musst aus der Kanone
+              schießen, das Lenkrad steuern und gegen deine Gegner kämpfen!
+            </article>
+          </div>
+          <button class="button_tertiary collapsible_btn js-collapsible_btn">
+            <span class="button_tertiary--text button_text">read more</span>
 
-          <svg
-            width="15"
-            height="15"
-            viewBox="0 0 15 15"
-            fill="currentColor"
-            stroke="currentColor"
-            xmlns="http://www.w3.org/2000/svg"
-            class="button_arrow js-button_arrow"
-          >
-            <g id="Component 1">
-              <path
-                id="Vector"
-                d="M5 4.98389L7.5 9.37868L10 4.98389L5 4.98389Z"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </g>
-          </svg>
-        </button>
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="currentColor"
+              stroke="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              class="button_arrow js-button_arrow"
+            >
+              <g id="Component 1">
+                <path
+                  id="Vector"
+                  d="M5 4.98389L7.5 9.37868L10 4.98389L5 4.98389Z"
+                  stroke-miterlimit="10"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
 
         <div class="description_diagram_container">
           <ul class="left_diagram__list">
@@ -106,7 +112,7 @@
         </div>
       </section>
 
-      <section class="video_section">
+      <section class="section video_section">
         <video width="320" height="240" class="video js-video" muted>
           <source src="assets/video/video.mp4" />
           Your browser does not support the video tag.
@@ -119,10 +125,19 @@
         ></button>
       </section>
 
-      <section class="booking">
+      <section class="section booking">
         <div
           class="discount_line discount_line--blue booking_discount__line--birthday"
         >
+          <div class="discount_line__text-container">
+            <span class="discount_line__text"
+              >🎉 discount on your birthday</span
+            >
+            <div class="discount_sum__container">
+              <span class="discount_sum">10</span>
+            </div>
+          </div>
+
           <div class="discount_line__text-container">
             <span class="discount_line__text"
               >🎉 discount on your birthday</span
@@ -162,59 +177,69 @@
               <span class="discount_sum">20</span>
             </div>
           </div>
-        </div>
-
-        <div class="GM_card">
-          <img
-            src="assets/images/gmPhoto.jpg"
-            alt="Eugens photo"
-            class="GM_card__img"
-            width="62"
-            height="62"
-          />
-          <div class="GM_card__text">
-            <h3 class="GM_card__title title--white">Hi I`m Eugene K.</h3>
-            <span class="GM_card__description">General manager</span>
+          <div class="discount_line__text-container">
+            <span class="discount_line__text"
+              >🎉 students weekdays Before 5:00 p.m.</span
+            >
+            <div class="discount_sum__container">
+              <span class="discount_sum">20</span>
+            </div>
           </div>
         </div>
 
-        <h2 class="booking_title title_h2 title--white">
-          Book a quest room without any prepayment
-        </h2>
-
-        <form class="booking_form">
-          <h3 class="booking_form__title title_h3 title--white">Book now</h3>
-
-          <input
-            type="text"
-            class="form_input form_input--name"
-            placeholder="Name"
-          />
-
-          <input
-            type="tel"
-            class="form_input form_input--phone"
-            placeholder="Phone*"
-          />
-
-          <button class="form_button button_primary">call back</button>
-
-          <span class="form_text__or"
-            >or ask a question right now in a chat</span
-          >
-
-          <div class="whatsApp_container">
-            <span class="whatsApp_text">ASAP to contact via WhatsApp</span>
+        <div class="booking_left__container">
+          <div class="GM_card">
             <img
-              src="./assets/icons/whatsapp.svg"
-              alt="chat"
-              class="whatsApp_icon"
+              src="assets/images/gmPhoto.jpg"
+              alt="Eugens photo"
+              class="GM_card__img"
             />
+            <div class="GM_card__text">
+              <h3 class="GM_card__title title--white">Hi I`m Eugene K.</h3>
+              <span class="GM_card__description">General manager</span>
+            </div>
           </div>
-        </form>
+
+          <h2 class="booking_title title_h2 title--white">
+            Book a quest room without any prepayment
+          </h2>
+        </div>
+
+        <div class="form_background">
+          <form class="booking_form">
+            <h3 class="booking_form__title title_h3 title--white">Book now</h3>
+
+            <input
+              type="text"
+              class="booking_form__input form_input--name"
+              placeholder="Name"
+            />
+
+            <input
+              type="tel"
+              class="booking_form__input form_input--phone"
+              placeholder="Phone*"
+            />
+
+            <button class="form_button button_primary">call back</button>
+
+            <span class="form_text__or"
+              >or ask a question right now in a chat</span
+            >
+
+            <div class="whatsApp_container">
+              <span class="whatsApp_text">ASAP to contact via WhatsApp</span>
+              <img
+                src="./assets/icons/whatsapp.svg"
+                alt="chat"
+                class="whatsApp_icon"
+              />
+            </div>
+          </form>
+        </div>
       </section>
 
-      <section class="teams_battle">
+      <section class="section teams_battle">
         <h2 class="teams_battle__title title_h2 title--gold">
           Team game + Quest Battle
         </h2>
@@ -242,17 +267,15 @@
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="section reviews">
         <h2 class="reviews__title title_h2 title--gold">Tripadvisor reviews</h2>
 
         <div class="reviews_all__container">
           <div class="all_reviews__header">
             <img
-              src="assets/icons/blackTripadvisorLogo.png"
+              src="assets/icons/blackTripadvisorLogo.svg"
               alt="tripadvisor Logo"
               class="all_reviews__img"
-              width="56"
-              height="56"
             />
           </div>
           <div class="all_reviews__body">
@@ -501,6 +524,180 @@
               <a href="#" class="one_review__link">Open</a>
             </div>
           </div>
+          <div class="one_review__container">
+            <div class="one_review__header">
+              <img
+                src="assets/images/reviewerPhoto.png"
+                alt="reviewer photo"
+                class="one_review__photo"
+                width="44"
+                height="44"
+              />
+              <div class="one_review__text-block">
+                <h3 class="reviewer_name">Marvin McKinney</h3>
+                <span class="reviewer_country">Bratislava, Slovakia</span>
+              </div>
+            </div>
+
+            <div class="one_review__middle-container">
+              <div class="one_review__mark_container">
+                <div class="mark-circles">
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+                </div>
+
+                <span class="one_review__mark">5.0</span>
+              </div>
+
+              <span class="one_review__date">May 2022</span>
+            </div>
+
+            <div class="one_review__text">
+              <h3 class="one_review__subtitle">First Timer in Escape Games</h3>
+              <p class="one_review__review-text">
+                Danube Pirates made my day) It was my first experience in an
+                escape room and I had a lot of fun there with my friends. With
+                great riddles and therefore even more interesting and exciting.
+                And I really enjoyed the atmosphere, very well thought out
+                details, interior, and assignments. Would definitely recommend
+                to visit.
+              </p>
+              <a href="#" class="one_review__link">Open</a>
+            </div>
+          </div>
+          <div class="one_review__container">
+            <div class="one_review__header">
+              <img
+                src="assets/images/reviewerPhoto.png"
+                alt="reviewer photo"
+                class="one_review__photo"
+                width="44"
+                height="44"
+              />
+              <div class="one_review__text-block">
+                <h3 class="reviewer_name">Marvin McKinney</h3>
+                <span class="reviewer_country">Bratislava, Slovakia</span>
+              </div>
+            </div>
+
+            <div class="one_review__middle-container">
+              <div class="one_review__mark_container">
+                <div class="mark-circles">
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+                </div>
+
+                <span class="one_review__mark">5.0</span>
+              </div>
+
+              <span class="one_review__date">May 2022</span>
+            </div>
+
+            <div class="one_review__text">
+              <h3 class="one_review__subtitle">First Timer in Escape Games</h3>
+              <p class="one_review__review-text">
+                Danube Pirates made my day) It was my first experience in an
+                escape room and I had a lot of fun there with my friends. With
+                great riddles and therefore even more interesting and exciting.
+                And I really enjoyed the atmosphere, very well thought out
+                details, interior, and assignments. Would definitely recommend
+                to visit.
+              </p>
+              <a href="#" class="one_review__link">Open</a>
+            </div>
+          </div>
+          <div class="one_review__container">
+            <div class="one_review__header">
+              <img
+                src="assets/images/reviewerPhoto.png"
+                alt="reviewer photo"
+                class="one_review__photo"
+                width="44"
+                height="44"
+              />
+              <div class="one_review__text-block">
+                <h3 class="reviewer_name">Marvin McKinney</h3>
+                <span class="reviewer_country">Bratislava, Slovakia</span>
+              </div>
+            </div>
+
+            <div class="one_review__middle-container">
+              <div class="one_review__mark_container">
+                <div class="mark-circles">
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+
+                  <div class="mark-circle">
+                    <div class="mark_circle--fill mark_circle--fill-4"></div>
+                  </div>
+                </div>
+
+                <span class="one_review__mark">5.0</span>
+              </div>
+
+              <span class="one_review__date">May 2022</span>
+            </div>
+
+            <div class="one_review__text">
+              <h3 class="one_review__subtitle">First Timer in Escape Games</h3>
+              <p class="one_review__review-text">
+                Danube Pirates made my day) It was my first experience in an
+                escape room and I had a lot of fun there with my friends. With
+                great riddles and therefore even more interesting and exciting.
+                And I really enjoyed the atmosphere, very well thought out
+                details, interior, and assignments. Would definitely recommend
+                to visit.
+              </p>
+              <a href="#" class="one_review__link">Open</a>
+            </div>
+          </div>
         </div>
 
         <div class="reviews_button__container">
@@ -523,10 +720,15 @@
               />
             </svg>
           </button>
+
+          <div class="reviews_scroll__buttons-container">
+            <button class="scroll-button scroll-button--left"></button>
+            <button class="scroll-button scroll-button--right"></button>
+          </div>
         </div>
       </section>
 
-      <section class="gallery">
+      <section class="section gallery">
         <h2 class="gallery__title title_h2 title--gold">Gallery</h2>
 
         <div class="gallery_photos">
@@ -587,7 +789,7 @@
         </div>
       </section>
 
-      <section class="corporate">
+      <section class="section corporate">
         <div class="corporate_container">
           <div class="corporate_title__container">
             <h2 class="corporate__title title_h2 title--gold">
@@ -609,39 +811,889 @@
         </div>
       </section>
 
-      <section class="time_booking">
-        <h2 class="time_booking__title title_h2 title--gold">
-          Book the time - pay locally
-        </h2>
+      <section class="section time_booking">
+        <div class="time_booking__header">
+          <div class="time_booking__title-container">
+            <h2 class="time_booking__title title_h2 title--gold">
+              Book the time - pay locally
+            </h2>
+
+            <!--desktop only-->
+            <span class="time_booking__tips">
+              кількість людей не впливає на ціну
+            </span>
+          </div>
+
+          <!--desktop only-->
+          <button
+            class="button_calendar button_calendar--desktop js-calendar_button--desktop"
+          >
+            Choose on calendar
+          </button>
+        </div>
 
         <div class="days_container">
           <div class="day_container day_container--disabled">
-            <span class="day_date__text">June 21</span>
-            <span class="day_name__text">wednesday</span>
+            <div class="day_container__header">
+              <span class="day_date__text">June 21</span>
+              <span class="day_name__text">wednesday</span>
+            </div>
+
+            <div class="times_container times_container--desktop">
+              <h3 class="time_price title--gold">98 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="10:00"
+                  value="10:00"
+                />
+                <label for="10:00" class="time_text__label">10:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="11:00"
+                  value="11:00"
+                />
+                <label for="11:00" class="time_text__label">11:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="12:00"
+                  value="12:00"
+                  checked
+                />
+                <label for="12:00" class="time_text__label">12:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="13:00"
+                  value="13:00"
+                  disabled
+                />
+                <label for="13:00" class="time_text__label">13:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="14:00"
+                  value="14:00"
+                />
+                <label for="14:00" class="time_text__label">14:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="15:00"
+                  value="15:00"
+                />
+                <label for="15:00" class="time_text__label">15:00</label>
+              </div>
+
+              <h3 class="time_price title--gold">114 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="16:00"
+                  value="16:00"
+                />
+                <label for="16:00" class="time_text__label">16:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="17:00"
+                  value="17:00"
+                  disabled
+                />
+                <label for="17:00" class="time_text__label">17:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="18:00"
+                  value="18:00"
+                />
+                <label for="18:00" class="time_text__label">18:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="19:00"
+                  value="19:00"
+                />
+                <label for="19:00" class="time_text__label">19:00</label>
+              </div>
+
+              <span class="select_time__text">
+                <b>June 22</b>, quest <b>starts at 12:00</b>
+              </span>
+
+              <div class="select_quest-type__container">
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="battle"
+                  value="battle"
+                  name="quest-type"
+                  checked
+                />
+                <label for="battle" class="quest_type__label">
+                  <span class="quest_type__text">Battle</span>
+                  <span class="quest_type__price"
+                    ><span class="quest_type__price--old">196</span> 118 €</span
+                  >
+                </label>
+
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="single"
+                  value="single"
+                  name="quest-type"
+                />
+                <label for="single" class="quest_type__label">
+                  <span class="quest_type__text">Single</span>
+                  <span class="quest_type__price">98 €</span>
+                </label>
+              </div>
+            </div>
           </div>
+
           <div class="day_container day_container--disabled">
-            <span class="day_date__text">June 22</span>
-            <span class="day_name__text">thursday</span>
+            <div class="day_container__header">
+              <span class="day_date__text">June 22</span>
+              <span class="day_name__text">thursday</span>
+            </div>
+
+            <div class="times_container times_container--desktop">
+              <h3 class="time_price title--gold">98 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="10:00"
+                  value="10:00"
+                />
+                <label for="10:00" class="time_text__label">10:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="11:00"
+                  value="11:00"
+                />
+                <label for="11:00" class="time_text__label">11:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="12:00"
+                  value="12:00"
+                  checked
+                />
+                <label for="12:00" class="time_text__label">12:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="13:00"
+                  value="13:00"
+                  disabled
+                />
+                <label for="13:00" class="time_text__label">13:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="14:00"
+                  value="14:00"
+                />
+                <label for="14:00" class="time_text__label">14:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="15:00"
+                  value="15:00"
+                />
+                <label for="15:00" class="time_text__label">15:00</label>
+              </div>
+
+              <h3 class="time_price title--gold">114 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="16:00"
+                  value="16:00"
+                />
+                <label for="16:00" class="time_text__label">16:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="17:00"
+                  value="17:00"
+                  disabled
+                />
+                <label for="17:00" class="time_text__label">17:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="18:00"
+                  value="18:00"
+                />
+                <label for="18:00" class="time_text__label">18:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="19:00"
+                  value="19:00"
+                />
+                <label for="19:00" class="time_text__label">19:00</label>
+              </div>
+
+              <span class="select_time__text">
+                <b>June 22</b>, quest <b>starts at 12:00</b>
+              </span>
+
+              <div class="select_quest-type__container">
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="battle"
+                  value="battle"
+                  name="quest-type"
+                  checked
+                />
+                <label for="battle" class="quest_type__label">
+                  <span class="quest_type__text">Battle</span>
+                  <span class="quest_type__price"
+                    ><span class="quest_type__price--old">196</span> 118 €</span
+                  >
+                </label>
+
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="single"
+                  value="single"
+                  name="quest-type"
+                />
+                <label for="single" class="quest_type__label">
+                  <span class="quest_type__text">Single</span>
+                  <span class="quest_type__price">98 €</span>
+                </label>
+              </div>
+            </div>
           </div>
+
           <div class="day_container day_container--active">
-            <span class="day_date__text">June 23</span>
-            <span class="day_name__text">friday</span>
+            <div class="day_container__header">
+              <span class="day_date__text">June 23</span>
+              <span class="day_name__text">friday</span>
+            </div>
+
+            <div class="times_container times_container--desktop">
+              <h3 class="time_price title--gold">98 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="10:00"
+                  value="10:00"
+                />
+                <label for="10:00" class="time_text__label">10:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="11:00"
+                  value="11:00"
+                />
+                <label for="11:00" class="time_text__label">11:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="12:00"
+                  value="12:00"
+                  checked
+                />
+                <label for="12:00" class="time_text__label">12:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="13:00"
+                  value="13:00"
+                  disabled
+                />
+                <label for="13:00" class="time_text__label">13:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="14:00"
+                  value="14:00"
+                />
+                <label for="14:00" class="time_text__label">14:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="15:00"
+                  value="15:00"
+                />
+                <label for="15:00" class="time_text__label">15:00</label>
+              </div>
+
+              <h3 class="time_price title--gold">114 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="16:00"
+                  value="16:00"
+                />
+                <label for="16:00" class="time_text__label">16:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="17:00"
+                  value="17:00"
+                  disabled
+                />
+                <label for="17:00" class="time_text__label">17:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="18:00"
+                  value="18:00"
+                />
+                <label for="18:00" class="time_text__label">18:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="19:00"
+                  value="19:00"
+                />
+                <label for="19:00" class="time_text__label">19:00</label>
+              </div>
+
+              <span class="select_time__text">
+                <b>June 22</b>, quest <b>starts at 12:00</b>
+              </span>
+
+              <div class="select_quest-type__container">
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="battle"
+                  value="battle"
+                  name="quest-type"
+                  checked
+                />
+                <label for="battle" class="quest_type__label">
+                  <span class="quest_type__text">Battle</span>
+                  <span class="quest_type__price"
+                    ><span class="quest_type__price--old">196</span> 118 €</span
+                  >
+                </label>
+
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="single"
+                  value="single"
+                  name="quest-type"
+                />
+                <label for="single" class="quest_type__label">
+                  <span class="quest_type__text">Single</span>
+                  <span class="quest_type__price">98 €</span>
+                </label>
+              </div>
+            </div>
           </div>
+
           <div class="day_container day_container--future">
-            <span class="day_date__text">June 24</span>
-            <span class="day_name__text">saturday</span>
+            <div class="day_container__header">
+              <span class="day_date__text">June 24</span>
+              <span class="day_name__text">saturday</span>
+            </div>
+
+            <div class="times_container times_container--desktop">
+              <h3 class="time_price title--gold">98 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="10:00"
+                  value="10:00"
+                />
+                <label for="10:00" class="time_text__label">10:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="11:00"
+                  value="11:00"
+                />
+                <label for="11:00" class="time_text__label">11:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="12:00"
+                  value="12:00"
+                  checked
+                />
+                <label for="12:00" class="time_text__label">12:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="13:00"
+                  value="13:00"
+                  disabled
+                />
+                <label for="13:00" class="time_text__label">13:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="14:00"
+                  value="14:00"
+                />
+                <label for="14:00" class="time_text__label">14:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="15:00"
+                  value="15:00"
+                />
+                <label for="15:00" class="time_text__label">15:00</label>
+              </div>
+
+              <h3 class="time_price title--gold">114 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="16:00"
+                  value="16:00"
+                />
+                <label for="16:00" class="time_text__label">16:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="17:00"
+                  value="17:00"
+                  disabled
+                />
+                <label for="17:00" class="time_text__label">17:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="18:00"
+                  value="18:00"
+                />
+                <label for="18:00" class="time_text__label">18:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="19:00"
+                  value="19:00"
+                />
+                <label for="19:00" class="time_text__label">19:00</label>
+              </div>
+
+              <span class="select_time__text">
+                <b>June 22</b>, quest <b>starts at 12:00</b>
+              </span>
+
+              <div class="select_quest-type__container">
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="battle"
+                  value="battle"
+                  name="quest-type"
+                  checked
+                />
+                <label for="battle" class="quest_type__label">
+                  <span class="quest_type__text">Battle</span>
+                  <span class="quest_type__price"
+                    ><span class="quest_type__price--old">196</span> 118 €</span
+                  >
+                </label>
+
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="single"
+                  value="single"
+                  name="quest-type"
+                />
+                <label for="single" class="quest_type__label">
+                  <span class="quest_type__text">Single</span>
+                  <span class="quest_type__price">98 €</span>
+                </label>
+              </div>
+            </div>
           </div>
+
           <div class="day_container day_container--future">
-            <span class="day_date__text">June 25</span>
-            <span class="day_name__text">sunday</span>
+            <div class="day_container__header">
+              <span class="day_date__text">June 25</span>
+              <span class="day_name__text">sunday</span>
+            </div>
+
+            <div class="times_container times_container--desktop">
+              <h3 class="time_price title--gold">98 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="10:00"
+                  value="10:00"
+                />
+                <label for="10:00" class="time_text__label">10:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="11:00"
+                  value="11:00"
+                />
+                <label for="11:00" class="time_text__label">11:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="12:00"
+                  value="12:00"
+                  checked
+                />
+                <label for="12:00" class="time_text__label">12:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="13:00"
+                  value="13:00"
+                  disabled
+                />
+                <label for="13:00" class="time_text__label">13:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="14:00"
+                  value="14:00"
+                />
+                <label for="14:00" class="time_text__label">14:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="15:00"
+                  value="15:00"
+                />
+                <label for="15:00" class="time_text__label">15:00</label>
+              </div>
+
+              <h3 class="time_price title--gold">114 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="16:00"
+                  value="16:00"
+                />
+                <label for="16:00" class="time_text__label">16:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="17:00"
+                  value="17:00"
+                  disabled
+                />
+                <label for="17:00" class="time_text__label">17:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="18:00"
+                  value="18:00"
+                />
+                <label for="18:00" class="time_text__label">18:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="19:00"
+                  value="19:00"
+                />
+                <label for="19:00" class="time_text__label">19:00</label>
+              </div>
+
+              <span class="select_time__text">
+                <b>June 22</b>, quest <b>starts at 12:00</b>
+              </span>
+
+              <div class="select_quest-type__container">
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="battle"
+                  value="battle"
+                  name="quest-type"
+                  checked
+                />
+                <label for="battle" class="quest_type__label">
+                  <span class="quest_type__text">Battle</span>
+                  <span class="quest_type__price"
+                    ><span class="quest_type__price--old">196</span> 118 €</span
+                  >
+                </label>
+
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="single"
+                  value="single"
+                  name="quest-type"
+                />
+                <label for="single" class="quest_type__label">
+                  <span class="quest_type__text">Single</span>
+                  <span class="quest_type__price">98 €</span>
+                </label>
+              </div>
+            </div>
           </div>
+
           <div class="day_container day_container--future">
-            <span class="day_date__text">June 26</span>
-            <span class="day_name__text">monday</span>
+            <div class="day_container__header">
+              <span class="day_date__text">June 26</span>
+              <span class="day_name__text">monday</span>
+            </div>
+
+            <div class="times_container times_container--desktop">
+              <h3 class="time_price title--gold">98 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="10:00"
+                  value="10:00"
+                />
+                <label for="10:00" class="time_text__label">10:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="11:00"
+                  value="11:00"
+                />
+                <label for="11:00" class="time_text__label">11:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="12:00"
+                  value="12:00"
+                  checked
+                />
+                <label for="12:00" class="time_text__label">12:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="13:00"
+                  value="13:00"
+                  disabled
+                />
+                <label for="13:00" class="time_text__label">13:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="14:00"
+                  value="14:00"
+                />
+                <label for="14:00" class="time_text__label">14:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="15:00"
+                  value="15:00"
+                />
+                <label for="15:00" class="time_text__label">15:00</label>
+              </div>
+
+              <h3 class="time_price title--gold">114 €</h3>
+
+              <div class="time_container">
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="16:00"
+                  value="16:00"
+                />
+                <label for="16:00" class="time_text__label">16:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="17:00"
+                  value="17:00"
+                  disabled
+                />
+                <label for="17:00" class="time_text__label">17:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="18:00"
+                  value="18:00"
+                />
+                <label for="18:00" class="time_text__label">18:00</label>
+
+                <input
+                  type="radio"
+                  name="quest-time"
+                  class="time_text__input"
+                  id="19:00"
+                  value="19:00"
+                />
+                <label for="19:00" class="time_text__label">19:00</label>
+              </div>
+
+              <span class="select_time__text">
+                <b>June 22</b>, quest <b>starts at 12:00</b>
+              </span>
+
+              <div class="select_quest-type__container">
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="battle"
+                  value="battle"
+                  name="quest-type"
+                  checked
+                />
+                <label for="battle" class="quest_type__label">
+                  <span class="quest_type__text">Battle</span>
+                  <span class="quest_type__price"
+                    ><span class="quest_type__price--old">196</span> 118 €</span
+                  >
+                </label>
+
+                <input
+                  type="radio"
+                  class="quest_type__input"
+                  id="single"
+                  value="single"
+                  name="quest-type"
+                />
+                <label for="single" class="quest_type__label">
+                  <span class="quest_type__text">Single</span>
+                  <span class="quest_type__price">98 €</span>
+                </label>
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="calendar_button__container">
+        <!-- mobile only-->
+        <div class="calendar_button__container calendar_button__container--mob">
           <button class="button_calendar js-calendar_button">
             Choose on calendar
           </button>
@@ -649,7 +1701,8 @@
 
         <div class="standart_wrapper">
           <form action="#" class="time_booking__form">
-            <div class="times_container">
+            <!-- mobile only-->
+            <div class="times_container times_container--mobile">
               <h3 class="time_price title--gold">98 €</h3>
 
               <div class="time_container">
@@ -829,17 +1882,29 @@
         </div>
       </section>
 
-      <section class="location">
+      <section class="section location">
         <div class="standart_wrapper">
           <h2 class="location__title title_h2 title--gold">
             We are located at
           </h2>
 
           <div class="location_map__container">
-            <img src="assets/images/locationMap.png" alt="map" class="map" />
+            <img
+              src="assets/images/locationMap.png"
+              alt="map"
+              class="map--mob"
+            />
+            <img
+              src="assets/images/mapDesktop.jpg"
+              alt="map"
+              class="map--desktop"
+            />
             <div class="location_wind-rose"></div>
             <div class="location_pin"></div>
             <div class="location_map__footer">
+              <!-- desktop only-->
+              <h4 class="location_map__footer--title">Find us at:</h4>
+
               <p class="map_footer__text">
                 Vorgartenstraße 150. Eingang an der Ecke
                 Vorgartenstraße/Ybbsstraße
@@ -860,7 +1925,7 @@
         </div>
       </section>
 
-      <div class="standart_wrapper">
+      <div class="section standart_wrapper">
         <div class="discount_flyer">
           <div class="flyer_section flyer_section--top">
             <div class="discount_flyer__title">discount on your birthday</div>

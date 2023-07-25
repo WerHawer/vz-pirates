@@ -8,6 +8,7 @@ const refs = {
   video: document.querySelector(".js-video"),
   videoPlayBtn: document.querySelector(".js-play_button"),
   calendarBtn: document.querySelector(".js-calendar_button"),
+  desktopCalendarBtn: document.querySelector(".js-calendar_button--desktop"),
   calendarPopup: document.querySelector(".calendar_popup"),
   closeCalendarBtn: document.querySelector("#close_calendar_button"),
   closeCorporateBtn: document.querySelector("#close_corporate_booking_button"),
@@ -64,6 +65,7 @@ const hideCorporateBooking = () => {
 refs.collapsibleBtn.addEventListener("click", collapseInfo());
 refs.videoPlayBtn.addEventListener("click", playVideo);
 refs.calendarBtn.addEventListener("click", showCalendar);
+refs.desktopCalendarBtn.addEventListener("click", showCalendar);
 refs.closeCalendarBtn.addEventListener("click", hideCalendar);
 refs.closeCorporateBtn.addEventListener("click", hideCorporateBooking);
 refs.corporateBookingBtn.addEventListener("click", showCorporateBooking);

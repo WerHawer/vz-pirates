@@ -10,6 +10,11 @@
   gap: 210px;
 
   position: absolute;
+  z-index: 0;
+
+  overflow: hidden;
+
+  max-width: 120%;
 }
 
 .discount_line--yellow {
@@ -26,6 +31,28 @@
   width: max-content;
   display: flex;
   gap: 5px;
+}
+
+.booking_discount__line--students {
+  left: -10px;
+  bottom: 76px;
+
+  transform: rotate(7deg);
+}
+
+.booking_discount__line--students > .discount_line__text-container {
+  animation: textFlow 9s linear infinite;
+}
+
+.booking_discount__line--birthday {
+  left: -10px;
+  bottom: 65px;
+
+  transform: rotate(-10deg);
+}
+
+.booking_discount__line--birthday > .discount_line__text-container {
+  animation: textFlow 12s linear infinite;
 }
 
 .discount_line__text {
@@ -65,9 +92,10 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 100%;
+  width: 100%;
+  max-width: 750px;
 
-  margin-bottom: 77px;
+  margin: 0 auto 77px auto;
 }
 
 .flyer_section {
@@ -120,4 +148,76 @@
   text-transform: uppercase;
   color: var(--color-gold-light);
   font-weight: 500;
+}
+
+@keyframes textFlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-100% - 210px));
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .discount_line {
+    padding: 5px 30px;
+    font-size: 3.1rem;
+  }
+
+  .discount_sum__container {
+    font-size: 3.1rem;
+    position: relative;
+  }
+
+  .booking_discount__line--birthday {
+    left: -15px;
+    bottom: 65px;
+
+    transform: rotate(-5deg);
+  }
+
+  .booking_discount__line--students {
+    left: -15px;
+    bottom: 78px;
+
+    transform: rotate(7deg);
+  }
+
+  .discount_flyer {
+    gap: 64px;
+  }
+
+  .discount_flyer__title {
+    padding: 0 30px;
+
+    font-family: var(--secondary-font-family);
+    font-size: 3.8rem;
+  }
+
+  .discount_flyer__title:first-child {
+    margin-right: 16px;
+  }
+
+  .flyer_sum {
+    font-size: 11.1rem;
+  }
+
+  .discount_text {
+    font-size: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .booking_discount__line--birthday {
+    bottom: 250px;
+
+    transform: rotate(-10deg);
+  }
+
+  .booking_discount__line--students {
+    bottom: 218px;
+
+    transform: rotate(7deg);
+  }
 }
