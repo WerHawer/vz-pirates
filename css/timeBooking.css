@@ -25,6 +25,10 @@
   overflow-x: auto;
 }
 
+.days_container::-webkit-scrollbar {
+  display: none;
+}
+
 .day_container {
   flex-shrink: 0;
 }

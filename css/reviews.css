@@ -137,6 +137,10 @@
   overflow-x: auto;
 }
 
+.reviews_container::-webkit-scrollbar {
+  display: none;
+}
+
 .one_review__container {
   display: flex;
   flex-direction: column;
