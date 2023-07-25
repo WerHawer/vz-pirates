@@ -120,9 +120,6 @@
     padding: 14px 20px;
 
     width: 347px;
-
-    background: var(--color-gold-light-50);
-    backdrop-filter: blur(2.5px);
   }
 
   .location_map__footer--title {
