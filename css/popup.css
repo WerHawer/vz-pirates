@@ -13,6 +13,12 @@
   padding: 0 18px;
 }
 
+.popup_container--colored {
+  background: var(--color-gold) url("../assets/images/colorPopupBg.jpg")
+    no-repeat center;
+  background-size: cover;
+}
+
 .close_icon {
   width: 32px;
   height: 32px;
@@ -20,4 +26,8 @@
   top: 10px;
   right: 10px;
   cursor: pointer;
+}
+
+.close_icon--dark {
+  color: var(--color-dark);
 }

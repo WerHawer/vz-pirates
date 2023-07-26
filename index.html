@@ -7,7 +7,6 @@
     <title>Danube Pirates</title>
   </head>
   <body>
-    <!--    <header class="header">HEADER</header>-->
     <main class="main">
       <section class="section top_section">
         <div class="top_tripadvisor tripadvisor_container">
@@ -227,6 +226,7 @@
               >or ask a question right now in a chat</span
             >
 
+            `
             <div class="whatsApp_container">
               <span class="whatsApp_text">ASAP to contact via WhatsApp</span>
               <img
@@ -2019,16 +2019,34 @@
       </div>
     </div>
 
-    <div class="popup_container corporate_booking_popup hide">
-      <form class="corporate_booking__form">
-        <img
-          src="assets/icons/close.svg"
-          alt="close"
-          class="close_icon"
+    <div
+      class="popup_container popup_container--colored corporate_booking_popup hide"
+    >
+      <form class="corporate_booking__form corporate_booking__form--white">
+        <div
+          class="close_icon close_icon--dark"
           id="close_corporate_booking_button"
-          width="32"
-          height="32"
-        />
+        >
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="currentColor"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g id="Icons / Close" clip-path="url(#clip0_277_3662)">
+              <path
+                id="Vector"
+                d="M25.3333 8.54699L23.4533 6.66699L16 14.1203L8.54663 6.66699L6.66663 8.54699L14.12 16.0003L6.66663 23.4537L8.54663 25.3337L16 17.8803L23.4533 25.3337L25.3333 23.4537L17.88 16.0003L25.3333 8.54699Z"
+              />
+            </g>
+            <defs>
+              <clipPath id="clip0_277_3662">
+                <rect width="32" height="32" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
         <h3 class="corporate_booking__title title_h3 title--white">
           Book a corporate
         </h3>
@@ -2039,14 +2057,14 @@
 
         <input
           type="text"
-          class="form__input--corporate"
+          class="form__input--corporate form__input--corporate--white"
           placeholder="Name"
           name="name"
         />
 
         <input
           type="tel"
-          class="form__input--corporate"
+          class="form__input--corporate form__input--corporate--white"
           placeholder="Phone*"
           name="phone"
         />

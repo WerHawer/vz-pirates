@@ -20,6 +20,7 @@
 @import url("popup.css");
 @import url("calendar.css");
 @import url("location.css");
+@import url("thanks.css");
 
 html {
   font-size: var(--base-font-size);

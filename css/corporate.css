@@ -58,11 +58,22 @@
 }
 
 .corporate_booking__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   padding: 56px 16px;
   position: relative;
 
   border: 1px solid var(--color-light-brown);
   background: var(--color-dark-55);
+  backdrop-filter: blur(10px);
+}
+
+.corporate_booking__form--white {
+  border: 1px solid var(--color-white-25);
+  background: var(--color-white-10);
   backdrop-filter: blur(15px);
 }
 
@@ -103,6 +114,11 @@
   color: var(--color-white-70);
 
   margin-bottom: 18px;
+}
+
+.form__input--corporate--white {
+  border: 1px solid var(--color-white-80);
+  background: transparent;
 }
 
 .form__input--corporate:last-of-type {
@@ -156,5 +172,14 @@
     padding: 0 50px;
 
     margin-bottom: 30px;
+  }
+
+  .corporate_booking__form {
+    width: 710px;
+  }
+
+  .form__input--corporate,
+  .corporate_booking__button {
+    max-width: 362px;
   }
 }
